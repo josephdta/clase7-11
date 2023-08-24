@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -10,7 +13,6 @@ body {
     font-family: Arial, sans-serif;
     width: 100vw;
     height: 100vh;
-    background-color: #f4f4f4;
     justify-content: center;
 }
 
@@ -50,10 +52,65 @@ h1{
 }
 
 .batman{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    overflow: hidden;
     width: 300px;
     height: 530px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.images{
+    position: relative;
+}
+
+.heart{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+}
+
+.batman-bg{
+    width: 100%;
+    height: 194px;
+}
+
+.photobat{
+    position: absolute;
+    z-index: 11;
+    top: 120px;
+    left: 85px;
+}
+
+.text-bg{
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 336px;
+}
+
+.text-bg h2{
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+.text-bg p{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.text-bg a{
+    padding: 10px 20px;
+    background-color: #00669F;
+    color: #F3F3F3;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    box-shadow: var(--shadow-elevation-medium);
 }
 
 footer{
