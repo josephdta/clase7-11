@@ -86,6 +86,8 @@ h1{
     z-index: 11;
     top: 120px;
     left: 85px;
+    width: 50px;
+    height: 12px;
 }
 
 .text-bg{
